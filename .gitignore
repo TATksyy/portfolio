@@ -1,0 +1,18 @@
+# Default-deny root files: publishable site and deployment configuration only.
+/*
+!/site/
+!/site/**
+!/.github/
+!/.github/**
+!/.gitignore
+
+# Extra protection; inspect the actual staging and deployment contents as well.
+**/node_modules/
+**/.env
+**/.env.*
+**/secrets.*
+**/*.key
+**/*.pem
+**/.DS_Store
+**/Thumbs.db
+/local-reference/
